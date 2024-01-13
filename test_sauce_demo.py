@@ -20,9 +20,9 @@ class TestSauceDemo(unittest.TestCase):
         login_page.enter_password('secret_sauce')
         login_page.click_login()
 
-        self.assertIn('inventory.html', driver.current_url) # Verifying the successfull login
+        self.assertIn('inventory.html', driver.current_url) 
 
-        # Interact with inventory page
+        # to interact with inventory page
         inventory_page = InventoryPage(driver)
         inventory_page.add_to_cart()
         inventory_page.go_to_cart()
