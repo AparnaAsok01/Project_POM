@@ -17,7 +17,6 @@ def browser():
     driver.quit()
 
 
-
 def test_saucedemo_workflow(browser):
     browser.get("https://www.saucedemo.com/")
 
